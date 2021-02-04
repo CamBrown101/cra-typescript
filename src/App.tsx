@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <Head />
+      <Head title="Hello" isActive={true} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
