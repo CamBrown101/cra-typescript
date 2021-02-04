@@ -1,14 +1,12 @@
 import React from 'react';
 
-// title
-// isActive
-
+//Sets types for props. Props word can be anything
 type Props = {
   title: string;
   isActive: boolean;
 };
 
-export const Head = ({ title, isActive }: Props) => {
+export const Head = ({ title = 'Hello', isActive = true }: Props) => {
   return (
     <div>
       <h1>{title}</h1>
