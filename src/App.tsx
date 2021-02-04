@@ -1,10 +1,12 @@
 import React from 'react';
+import { Head } from './components/Head';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <Head />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +22,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
