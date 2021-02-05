@@ -1,5 +1,4 @@
 import React from 'react';
-//TypeScript
 //Sets types for props. Props word can be anything
 //Title is required and isActive is optional
 //By default params are required
