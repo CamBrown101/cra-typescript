@@ -1,15 +1,10 @@
 import React from 'react';
 
 type Props = {
-  //Method returns a string
-  // onClick(): string;
-  //Method returns nothing
-  // onClick(): void;
-  // Method with params
-  // onClick(text: string): void;
-  onClick: (text: string) => void;
+  //typing Dom events
+  onClick: (e: React.MouseEvent) => void;
 };
 
 export const Button = ({ onClick }: Props) => {
-  return <button onClick={() => onClick('hi')}>Click Me</button>;
+  return <button onClick={onClick}>Click Me</button>;
 };
