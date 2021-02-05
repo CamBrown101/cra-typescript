@@ -6,11 +6,11 @@ export const Input = () => {
   //Saying it is a string, could also do a "|" and allow it to be more then one type
   // const [name, setName] = useState<string>('');
   //!null is read only
-  const ref = useRef<HTMLInputElement>(null!);
+  const ref = useRef<HTMLInputElement>(null);
   // const ref = useRef<HTMLInputElement | null>(null);
-  if (ref && ref.current) {
-    console.log('ref', ref.current.value);
-  }
+
+  console.log('ref', ref?.current?.value);
+
   return (
     <input ref={ref} value={name} onChange={(e) => setName(e.target.value)} />
   );
