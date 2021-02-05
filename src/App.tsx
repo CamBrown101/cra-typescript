@@ -2,6 +2,7 @@ import React from 'react';
 import { Head } from './components/Head';
 import { Button } from './components/Button';
 import { Input } from './components/Input';
+import { ReducerButtons } from './components/ReducerButtons';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,6 +17,7 @@ const App = () => {
         }}>
         Hello FC
       </Button>
+      <ReducerButtons />
       <Input />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
